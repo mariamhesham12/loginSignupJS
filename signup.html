@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+        <div class="form mt-5">
+            <div class="form-content py-4">
+            <h1 class="text-center pb-3 pt-4">Smart Sign Up System</h1>
+            <div class="mb-3">
+                <input class="form-control" id="name" type="text" placeholder="Enter your name" aria-label="default input example">
+            </div>
+            <div class="mb-3">
+                <input class="form-control" id="email" type="email" placeholder="Enter your email" aria-label="default input example">
+            </div>
+            <div class="mb-3">
+                <input class="form-control" id="password" type="password" placeholder="Enter your password" aria-label="default input example">
+            </div>
+            <p class="text text-danger text-center d-none" id="requiredInput">all inputs are required</p>
+            <p class="text text-success text-center d-none" id="successInput">Success</p>
+            <p class="text text-danger text-center d-none" id="existEmailInput">email already exists</p>
+            <p class="text text-danger text-center d-none" id="validEmailFormat"> Invalid email format</p>
+            <p class="text text-danger text-center d-none" id="validNameFormat"> Invalid username. Must be 3-20 characters and contain only letters, numbers, or underscores.</p>
+
+            <button class="btn btn-outline-info w-100 mt-2" id="signup">Sign Up</button>
+            <p class="text-center mt-3">You have an account? <a href="./index.html">Signin</a></p>
+        </div>
+        </div>
+        </div>
+    </section>
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js"></script>
+</body>
+</html>
